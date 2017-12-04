@@ -7,7 +7,12 @@ class Sitegenerator extends CI_Controller {
 		if($this->verifysite($site_name) != TRUE) {
 			return false;
 		}
-		$this->tl->all_templates($site_name);
+
+		$options = array(
+			'site_name' => $site_name
+		);
+
+		$this->tl->template($options);
 	}
 
 	private function verifysite($site_name) {

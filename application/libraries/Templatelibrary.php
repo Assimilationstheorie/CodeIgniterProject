@@ -7,22 +7,18 @@ class Templatelibrary {
     $this->CI =& get_instance();
   }
 
-  public function header_template($site_name) {
-    echo $site_name;
+  private function header_template($options) {
+   $this->CI->load->view('templates/header', $options);
   }
 
-  public function content_template() {
-
+  public function template($options) {
+    $this->header_template($options);
+    $this->CI->load->view($options['site_name'], $options);
+    $this->footer_template($options);
   }
 
-  public function footer_template() {
-
-  }
-
-  public function all_templates($site_name) {
-    $this->header_template($site_name);
-    $this->content_template();
-    $this->footer_template();
+  private function footer_template($options) {
+    $this->CI->load->view('templates/footer', $options);
   }
 
 
