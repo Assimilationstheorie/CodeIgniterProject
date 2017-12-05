@@ -1,7 +1,4 @@
-<?php
-var_dump($translation);
 
- ?>
 
 <!DOCTYPE html>
 <html lang="">
