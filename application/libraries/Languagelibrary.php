@@ -9,7 +9,7 @@ class Languagelibrary {
   }
 
   public function getCurrentLanguageFile($file_name) {
-    $this->setLanguage('english');
+    $this->setLanguage('german');
     $sites = ['header', $file_name, 'footer'];
     return $this->CI->lang->load($sites, $this->getLanguage());
   }
@@ -20,14 +20,14 @@ class Languagelibrary {
     if($this->verifylanguage($language) == TRUE) {
       return $this->CI->session->language;
     }
-    return $this->CI->session->set_userdata('language', 'german');
+    return $this->CI->session->set_userdata('language', 'english');
   }
 
   private function getLanguage() {
     if($this->CI->session->has_userdata('language') == TRUE) {
       return $this->CI->session->language;
     }
-    return $this->CI->session->set_userdata('language', 'german');
+    return $this->CI->session->set_userdata('language', 'english');
   }
 
   private function verifylanguage($language) {

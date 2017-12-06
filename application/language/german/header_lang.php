@@ -1,3 +1,4 @@
 <?php
-  $lang['language_key'] = 'The actual message to be shown DEUTSCH';
+  $lang['html_lang'] = 'de-DE';
+  $lang['site_title'] = 'DEUTSCH';
  ?>

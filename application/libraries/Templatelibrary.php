@@ -8,7 +8,7 @@ class Templatelibrary {
   }
 
   private function header_template() {
-    $this->CI->load->view('templates/header');
+    return $this->CI->load->view('templates/header');
   }
 
   public function template($options) {
@@ -18,8 +18,8 @@ class Templatelibrary {
     $this->footer_template($options);
   }
 
-  private function footer_template($options) {
-    $this->CI->load->view('templates/footer', $options);
+  private function footer_template() {
+    return $this->CI->load->view('templates/footer');
   }
 
 
