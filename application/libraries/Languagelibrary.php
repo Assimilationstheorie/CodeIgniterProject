@@ -9,7 +9,8 @@ class Languagelibrary {
   }
 
   public function getCurrentLanguageFile($file_name) {
-    $this->setLanguage('german');
+    $this->getLanguage();
+     // $this->setLanguage('english');
     $sites = ['header', $file_name, 'footer'];
     return $this->CI->lang->load($sites, $this->getLanguage());
   }
@@ -32,7 +33,7 @@ class Languagelibrary {
 
   private function verifylanguage($language) {
     $all_languages = [
-      'german' => 'Deutsch',
+      'german'  => 'Deutsch',
       'english' => 'English',
       'russian' => 'Pусски'
     ];
