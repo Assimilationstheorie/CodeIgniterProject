@@ -10,7 +10,6 @@ class Languagelibrary {
 
   public function getCurrentLanguageFile($file_name) {
     $this->getLanguage();
-     // $this->setLanguage('english');
     $sites = ['header', $file_name, 'footer'];
     return $this->CI->lang->load($sites, $this->getLanguage());
   }

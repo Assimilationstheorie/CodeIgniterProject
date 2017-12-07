@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="<?php echo $this->lang->line('html_lang'); ?>">
   <head>
@@ -15,9 +16,9 @@
             <div class="field is-grouped">
               <p class="control">
                 <form action="change_language" method="POST">
-                  <button type="submit" value="english" name="language" class="button is-primary is-outlined"><?php echo $this->lang->line('language_english'); ?></button>
-                  <button type="submit" value="german" name="language" class="button is-primary is-outlined"><?php echo $this->lang->line('language_german'); ?></button>
-                  <button type="submit" value="russian" name="language" class="button is-primary is-outlined"><?php echo $this->lang->line('language_russian'); ?></button>
+                  <button type="submit" value="english" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_english'); ?></button>
+                  <button type="submit" value="german" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_german'); ?></button>
+                  <button type="submit" value="russian" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_russian'); ?></button>
                 </form>
               </p>
             </div>
@@ -30,4 +31,4 @@
         <span></span>
       </div>
     </div>
-</nav>
+  </nav>
