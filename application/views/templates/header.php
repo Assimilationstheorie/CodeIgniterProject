@@ -16,6 +16,7 @@
             <div class="field is-grouped">
               <p class="control">
                 <form action="change_language" method="POST">
+                  <input type="hidden" name="current_link" value="<?php echo $site_name;?>">
                   <button type="submit" value="english" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_english'); ?></button>
                   <button type="submit" value="german" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_german'); ?></button>
                   <button type="submit" value="russian" name="language" class="button is-link is-outlined"><?php echo $this->lang->line('language_russian'); ?></button>
