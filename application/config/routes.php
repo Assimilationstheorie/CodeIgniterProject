@@ -50,6 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+//Testing
+$route['testing'] = 'sitegenerator/createsite/testing';
+
 $route['default_controller'] = 'welcome';
 $route['change_language'] = 'languagecontroller/setLanguage';
 
